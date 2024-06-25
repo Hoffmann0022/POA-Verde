@@ -1,0 +1,163 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--header-footer-color);
+    color: #f1f1f1;
+    padding: 30px 0px;
+}
+
+.cima, .baixo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.cima div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9%;
+}
+
+.cima div:nth-child(1) img{
+    margin-right: 30px;
+}
+
+.cima div:nth-child(1) h4{
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+
+.cima div:nth-child(1) p{
+    font-size: .9rem;
+    margin-bottom: 7px;
+}
+
+.cima .tel{
+    margin-right: 9%;
+}
+
+.cima .tel h4{
+    font-size: 2rem;
+    margin-bottom: 7px;
+    text-align: right;
+    font-weight: 500;
+}
+
+.cima .tel h4 i{
+    color: var(--tertiary-color);
+}
+
+.cima .tel p{
+    font-size: .9rem;
+    margin-bottom: 7px;
+    text-align: right;
+}
+
+.baixo .links_footer{
+    margin-left: 9%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.baixo .links_footer a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.baixo .links_footer a:hover{
+    text-decoration: underline;
+}
+
+.baixo .portal{
+    margin-right: 9%;
+}
+
+.portal h4{
+    font-size:1.3rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+.portal h4 i{
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.portal h4:hover{
+   text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 770px){
+    .cima, .baixo{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--header-footer-color);
+        color: #f1f1f1;
+        padding: 30px 0px;
+    }
+    
+    .cima, .baixo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 20px 0px;
+    }
+    
+    .cima div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-left: 0%;
+    }
+    
+    .cima .tel h4{
+        text-align: left;
+    }
+
+    .cima .tel p{
+        text-align: left;
+    }
+    
+    .baixo .links_footer{
+        margin-left: 0%;
+        flex-direction: row;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    
+    .baixo .portal{
+        margin-right: 0%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 494px){
+    .cima div:nth-child(1){
+        flex-direction: column;
+        margin: 0px 20px ;
+    }
+
+    .cima div:nth-child(1) img{
+        margin-bottom: 30px;
+    }
+}

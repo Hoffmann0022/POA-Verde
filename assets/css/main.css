@@ -1,0 +1,768 @@
+/* Estilos do caminho feito pelo usuário */
+
+main{
+    width: 100vw;
+}
+
+.path{
+    
+    margin: 10px 7%;
+}
+
+.path ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+}
+
+.path ul li a{
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--link-color);
+    transition: .3s ease-in-out;
+}
+
+.path ul li a::after{
+    display: inline-block;
+    width: .57rem;
+    height: .57rem;
+    content:"";
+    background-image: url(../img/chevron-double-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .5;
+    margin: 0px 10px;
+}
+
+.path ul li .disable::after{
+    display: none;
+}
+
+.path ul li .disable{
+    color: rgb(156, 155, 155);
+}
+
+.path ul li a:hover{
+    text-decoration: underline;
+}
+
+.path ul li .disable:hover{
+    text-decoration: none;
+    cursor: auto;
+}
+
+
+/* Estilos do menu do DMLU */
+
+
+.dmlu{
+    margin: 30px 7%;
+}
+
+.dmlu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.dmlu ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--link-color);
+    transition: .3s ease-in-out;
+}
+
+.dmlu ul li a i{
+    margin-left: 10px;
+    font-size: .8rem;
+}
+
+.dmlu ul li a:hover{
+    color: #089297;
+}
+
+.dmlu hr{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* Efeito parallax e a animação do titulo */
+
+.parallax{
+    width: 98.7vw;
+    height: 80vh;
+    margin: 50px 0px;
+    background-image: url(../img/parallax-img.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+}
+
+.global_parallax{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 70%;
+}
+
+.parallax .logo_poa{
+    z-index: 1;
+    width: 45%;
+    margin: 40px 0px;
+}
+
+.parallax h1{
+    font-size: 4rem;
+    display: flex;
+    align-items:center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #fff;
+    z-index: 1;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.parallax h2{
+    font-size: 1.5rem;
+    display: flex;
+    align-items:center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    z-index: 1;
+    margin: 0px 5%;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+.parallax .material-symbols-outlined{
+    font-size: 4rem;
+    margin-right: 10px;
+    color: rgb(42, 160, 68);
+    animation: rotate 5s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilos dos textos */
+
+.mapa{
+    width: 50%;
+    margin: auto;
+    border: 1px solid #222;
+    border-radius: 2rem;
+}
+
+.text{
+    margin: 50px 10%;
+}
+
+.text h2{
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    letter-spacing: 7px;
+    color: #222;
+}
+
+p span{
+    font-weight: 600;
+}
+
+.text p{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    margin: 30px 5%;
+}
+
+.rotas{
+    position: relative;
+    padding-top: 70px;
+    padding-left: 100px;
+    margin-top: 0px;
+    margin: 0px 10% 50px 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotas p{
+    line-height: 40px;
+}
+
+.text ul{
+    margin: 30px 5%;
+}
+
+.text ol{
+    margin: 30px 5%;
+}
+
+.text ul li{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.text ul li::before{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    content:"";
+    background-image: url(../img/arrow-right-circle-fill.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px 10px;
+}
+
+.text ol li h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #222;
+}
+
+.text ol li::marker{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.imagem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imagem a{
+    text-decoration: none;
+    color: #f1f1f1;
+    margin-top: 50px;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #222;
+    border-radius: 2rem;
+    transition: .3s all ease-in-out;
+}
+
+figure a:hover{
+    background-color: #f1f1f1;
+    color: #222;
+    border: 1px solid #222;
+}
+
+.table_sub{
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.table_dad{
+    margin:auto;
+}
+
+
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.final p{
+    font-size: 1.5rem;
+    margin: 50px 5%;
+}
+
+.final button{
+    background-color: #222;
+    color: #f1f1f1;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 7px;
+    padding: 15px 25px;
+    border-radius: 2rem;
+    cursor: pointer;
+    animation: wiggle 2.2s linear infinite;
+    transition: all .3s ease-in-out;
+}
+
+.final button:hover{
+    color: #222;
+    background-color: transparent;
+    border: 2px solid #222;
+}
+
+@keyframes wiggle {
+    0%{
+        rotate: 0deg;
+    }
+    15%{
+        rotate: 10deg;
+    }
+    20%{
+        rotate: 10deg;
+    }
+    25%{
+        rotate: 10deg;
+    }
+    30%{
+        rotate: -10deg;
+    }
+    35%{
+        rotate: 10deg;
+    }
+    40%{
+        rotate: -10deg;
+    }
+    45%{
+        rotate: 10deg;
+    }
+    50%{
+        rotate: -10deg;
+    }
+    55%, 100%{
+        rotate: 0deg;
+    }
+    
+}
+
+/* Seção de redes sociais */
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    background-color: lightgray;
+    color: #525257;
+    padding: 50px 0px;
+}
+
+.social h2{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.social i{
+    font-size: 1.6rem;
+    padding: 10px 13px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    margin:10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.social i:hover{
+    background-color: #222;
+    color: #f1f1f1;
+}
+
+
+/* Estilização do login */
+
+.login{
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 2px solid #222;
+    border-radius: 2rem;
+    z-index: 2;
+    width: 70%;
+    padding: 50px 70px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login h2{
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #222;
+    margin-bottom: 50px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login form div{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.login label{
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-right: 15px;
+}
+
+.login input{
+    padding: 20px;
+    width: 65%;
+    height: 30px;
+    background-color: #ffffff85;
+    border: 1px solid gray;
+    border-radius: 2rem;
+}
+.login input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.login button{
+    background-color: #222;
+    color: #f1f1f1;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 4px;
+    padding: 15px 25px;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.login button:hover{
+    color: #222;
+    background-color: transparent;
+    border: 2px solid #222;
+}
+
+
+/* Estilização dos resaultados de pontos */
+
+.resultado{
+    background-color: #f1f1f1;
+    border: 2px solid #222;
+    border-radius: 2rem;
+    z-index: 2;
+    width: 60%;
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    position: relative;
+}
+
+
+.resultado h2{
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #222;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.resultado p{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.back{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    text-decoration: none;
+    color: #222;
+}
+
+.back:hover{
+    text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 2000px){
+    .parallax{
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 843px){
+    .dmlu ul{
+        display: none;
+    }
+
+    .login form div{
+        flex-direction: column;
+    }
+
+    .login label{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .login input{
+        width: 95%;
+    }
+
+    .parallax .logo_poa{
+        z-index: 1;
+        width: 65%;
+    }
+
+    .img_table_maior{
+        width: 100%;
+    }
+
+    .mapa{
+        width: 70%;
+    }
+
+    figure a{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 655px){
+    .parallax h1{
+        font-size: 2.7rem;
+        letter-spacing: 7px;
+    }
+
+    .parallax{
+        height: 70vh;
+    }
+    
+    .parallax h2{
+        font-size: 1rem;
+        letter-spacing: 4px;
+    }
+
+    .parallax .material-symbols-outlined{
+        font-size: 2.7rem;
+        margin-right: 7px;
+    }
+
+    .text h2{
+        font-size: 2.2rem;
+    }
+
+    .final p{
+        font-size: 1rem;
+    }
+
+    .login{
+        padding: 40px 50px;
+        width: 90%;
+    }
+
+    .login h2{
+        font-size: 1rem;
+    }
+
+    .login button{
+        font-size: .9rem;
+        padding: 10px 20px;
+        letter-spacing: 3px;
+    }
+
+    .resultado{
+        width: 80%;
+        padding: 40px 50px;
+    }
+
+    .parallax .logo_poa{
+        z-index: 1;
+        width: 55%;
+        margin-top: 0px;
+    }
+
+    .global_parallax{
+        justify-content: center;
+        width: 90%;
+    }
+
+    .img_table{
+        width: 150%;
+    }
+
+    .img_table_maior{
+        width: 90%;
+    }
+
+    .mapa{
+        width: 80%;
+    }
+
+    figure a{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 494px){
+    
+    .dmlu img{
+        width: 80%;
+    }
+    
+    .parallax h1{
+        font-size: 2rem;
+        letter-spacing: 7px;
+    }
+    
+    .parallax h2{
+        font-size: 1rem;
+        letter-spacing: 3px;
+    }
+
+    .parallax .material-symbols-outlined{
+        font-size: 2rem;
+        margin-right: 7px;
+    }
+
+    .text h2{
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+
+    .text ol li h3{
+        font-size: 1rem;
+    }
+
+    .text ul li{
+        font-size: .8rem;
+    }
+
+    .text p{
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+    p span{
+        font-weight: 800;
+    }
+
+    .final p{
+        font-size: .9rem;
+    }
+
+    .final button{
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 5px;
+        padding: 10px 20px;
+    }
+    
+    table td{
+        font-size: .8rem;
+        padding: 10px 10px;
+    }
+
+    table th{
+        font-size: .8rem;
+    }
+
+    .social i{
+        font-size: 1rem;
+        padding: 7px 10px;
+    }
+
+    .login{
+        padding: 20px 30px;
+        width: 95%;
+    }
+    .login h2{
+        font-size: .8rem;
+    }
+
+    .login label{
+        font-size: 1rem;
+    }
+
+    .login button{
+        font-size: .8rem;
+        padding: 8px 18px;
+        letter-spacing: 3px;
+    }
+    .resultado{
+        width: 90%;
+        padding: 20px 30px;
+    }
+
+    .parallax .logo_poa{
+        z-index: 1;
+        width: 85%;
+    }
+
+    .img_table{
+        width: 170%;
+    }
+
+    .img_table_maior{
+        width: 100%;
+    }
+
+    .mapa{
+        width: 90%;
+    }
+
+    figure a{
+        font-size: .85rem;
+    }
+}
