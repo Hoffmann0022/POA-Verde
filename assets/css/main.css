@@ -96,7 +96,7 @@ main{
 
 .parallax{
     width: 98.7vw;
-    height: 80vh;
+    height: 45vw;
     margin: 50px 0px;
     background-image: url(../img/parallax-img.avif);
     background-repeat: no-repeat;
@@ -537,15 +537,34 @@ figure a:hover{
 }
 
 
-@media only screen and (min-width: 2000px){
+
+@media only screen and (min-width: 1400px){
     .parallax{
-        height: 50vh;
+        height: 32vw;
+    }
+
+    .img_table{
+        width: 80%;
+    }
+
+    .img_table_maior{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1900px){
+    .parallax{
+        height: 27vw;
     }
 }
 
 @media only screen and (max-width: 843px){
     .dmlu ul{
         display: none;
+    }
+
+    .parallax{
+        height: 60vw;
     }
 
     .login form div{
